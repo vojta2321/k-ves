@@ -1,0 +1,326 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  color: white;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #BCAAA4;
+  text-shadow: 1px 1px 2px #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FBE9E7;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FFCCBC;
+}
+
+.hero {
+  background-image: url('kaves1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #6D4C41;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5D4037;
+}
+
+footer {
+  background-color: #3E2723;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #E0E0E0;
+}
+
+
+/* 📱 Responzivní design pro mobilní zařízení */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .gallery-item {
+    flex-direction: column;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu-item, .about-item, .contact-item {
+    padding: 10px;
+  }
+}
+
+/* 🔥 MENU background + overlay */
+.menu-bg {
+  background-image: url('kaves1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.menu-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-content {
+  text-align: center;
+  color: black;
+}
+
+.menu-content h2 {
+  font-size: 2.5rem;
+  color: #4E342E;
+  margin-bottom: 20px;
+}
+
+.menu-content ul {
+  list-style: none;
+}
+
+.menu-content li {
+  font-size: 1.3rem;
+  color: #3E2723;
+  margin: 10px 0;
+}
+/* Reset a základní styly */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #4E342E;  /* Hnědá barva */
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Flexbox pro O nás sekci */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  background-image: url('kaves1.jpg'); /* Nastavuje pozadí pro celou sekci */
+  background-size: cover;
+  background-position: center;
+}
+
+.about-item {
+  background-color: rgba(255, 255, 255, 0.7);  /* Poloviční průsvitné pozadí pro rámeček */
+  padding: 20px;
+  width: 48%; /* Každý článek bude mít 48% šířky */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about-item h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4E342E;
+}
+
+.about-item p {
+  font-size: 1.2rem;
+  color: #4E342E;
+  margin-bottom: 15px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px; /* menší odsazení od kraje */
+}
+
+header {
+  background-color: #4E342E; /* nebo jiná hnědá, pokud chceš změnit */
+  height: auto;
+  padding: 0; /* odstranění extra výšky */
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px; /* menší logo */
+  margin-right: 8px;
+}
+
+.logo-link h1 {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
